@@ -32,6 +32,13 @@ La deuda tecnica se paga con _Refactorización_, es imprescindible contar con pr
 ### Funciones
 1. Debe hacer exactamente lo que su nombre indica
 2. Limitar hasta 3 parametros
+3. Ordenar parametros en forma ascendente
+4. Tamaño reducido
+5. Simplicidad, hacer solo una cosa
+6. Menos de 20 lineas de codigo
+7. Evitar el uso del "else"
+8. Priorizar el uso de la condicional ternaria
+9. Evitar tener muchas identaciones
 
 
 
