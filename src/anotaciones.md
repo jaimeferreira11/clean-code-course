@@ -40,7 +40,18 @@ La deuda tecnica se paga con _Refactorización_, es imprescindible contar con pr
 8. Priorizar el uso de la condicional ternaria
 9. Evitar tener muchas identaciones
 
+### Generalidades
+* Hasta 80 caracteres por linea
+* Evitar la triple condicional, utilizar arrays
+* Evitar swicth, utilizar objetos literales
 
+## Principio DRY (Don't Repeat Self)
 
+ > Si quieres ser un programador productivo esfuérzate en escribir código legible
+
+ * Evita tener duplicidad de código
+ * Simplifica las pruebas
+ * Ayuda a centralizar los procesos
+ * Aplicar DRY, usualmente lleva a refactorizar
 
 
