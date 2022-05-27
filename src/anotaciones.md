@@ -54,4 +54,8 @@ La deuda tecnica se paga con _Refactorización_, es imprescindible contar con pr
  * Ayuda a centralizar los procesos
  * Aplicar DRY, usualmente lleva a refactorizar
 
+## Principio de responsabilidad única
+
+## SOLID
+
 
