@@ -40,6 +40,8 @@ La deuda tecnica se paga con _Refactorización_, es imprescindible contar con pr
 8. Priorizar el uso de la condicional ternaria
 9. Evitar tener muchas identaciones
 
+> **Tip 1:** Para evitar el uso de if/else, utilizar: arrays, includes
+
 
 
 
