@@ -28,6 +28,13 @@ La deuda tecnica se paga con _Refactorización_, es imprescindible contar con pr
    - ¿Que excatamente ahce la case?
    - ¿Como exactamente esta clase realiza cierta tarea?
    - ¿Hay algo especifico sobre su ubicacion?
+3. Propiedades estaticas primero, propiedades privadas ultimo.
+4. Constructores estaticos
+5. Constructor
+6. Metodos estaticos
+7. Metodos privados
+8. Resto de metodos ordenados de mayor a menor por importancia
+9. Getters y setters al final
 
 ### Funciones
 1. Debe hacer exactamente lo que su nombre indica
@@ -44,5 +51,29 @@ La deuda tecnica se paga con _Refactorización_, es imprescindible contar con pr
 
 
 
+### Generalidades
+* Hasta 80 caracteres por linea
+* Evitar la triple condicional, utilizar arrays
+* Evitar swicth, utilizar objetos literales
+* Evitar usar comenrarios, el codigo debe hablar por si mismos (autoexplicativo) utilizando buenos nombres de variables, funciones,etc.
 
+## Principio DRY (Don't Repeat Self)
 
+ > Si quieres ser un programador productivo esfuérzate en escribir código legible
+
+ * Evita tener duplicidad de código
+ * Simplifica las pruebas
+ * Ayuda a centralizar los procesos
+ * Aplicar DRY, usualmente lleva a refactorizar
+
+## Principio de responsabilidad única
+Priorizar la composición en lugar de herencia
+
+## SOLID
+Propiedades estaticas primero, propiedades privadas ultimo.
+2. Constructores estaticos
+3. Constructor
+4. Metodos estaticos
+5. Metodos privados
+6. Resto de metodos ordenados de mayor a menor por importancia
+7. Getters y setters al final

@@ -1,7 +1,8 @@
 (() => {
 
 
-  
+
+    // No usar triple condicional dentro del if
     function isRedFruit( fruit: string ): boolean {
         
         // Bad
@@ -16,10 +17,11 @@
 
     }
 
-    type FruitColor = 'red' | 'yellow' | 'purple';
+    // Simplificar esta función, evitar swicth
+    type FruitColor = 'red'|'yellow'|'purple'; // se creo un tipo para validar el string
     function getFruitsByColor( color: FruitColor ): string[] {
 
-        // Bad
+        // BAD
         /* if ( color === 'red' ) {
             return ['manzana','fresa'];
         } else if ( color === 'yellow') {
@@ -31,7 +33,6 @@
         } */
 
         // Good
-
         const fruitsByColor= {
             red: ['manzana','fresa'],
             yellow: ['piña','banana'],
@@ -42,6 +43,8 @@
             throw Error('the color must be: red, yellow, purple');
 
         return fruitsByColor[color];
+        
+ 
     }
 
     // Simplificar esta función
@@ -52,7 +55,7 @@
 
     function workingSteps() {
 
-        // Bad
+        // BAD
         /* if( isFirstStepWorking === true ) {
             if( isSecondStepWorking === true ) {
                 if( isThirdStepWorking === true ) {
@@ -75,13 +78,15 @@
             return 'First step broken.';
         } */
 
-        // Good
-        if( isFirstStepWorking === true ) return 'First step broken.';
-        if( isSecondStepWorking === true ) return 'Second step broken.';
-        if( isThirdStepWorking === true ) return 'Third step broken.';
-        if( isFourthStepWorking === true ) return 'Fourth step broken.';
+
+        // GOOD
+        if( !isFirstStepWorking ) return 'First step broken.';
+        if( !isFirstStepWorking ) return 'Second step broken.';
+        if( !isFirstStepWorking ) return 'Third step broken.';
+        if( !isFirstStepWorking ) return 'Fourth step broken.';
 
         return 'Working properly!';
+
     }
 
 
@@ -93,7 +98,7 @@
     console.log({ redFruits: getFruitsByColor('red') }); // ['manzana', 'fresa']
     console.log({ yellowFruits: getFruitsByColor('yellow') }); // ['piña', 'banana']
     console.log({ purpleFruits: getFruitsByColor('purple') }); // ['moras', 'uvas']
-    // console.log({ pinkFruits: getFruitsByColor('pink') }); // Error: the color must be: red, yellow, purple
+    //console.log({ pinkFruits: getFruitsByColor('pink') }); // Error: the color must be: red, yellow, purple
 
     // workingSteps
     console.log({ workingSteps: workingSteps() }); // Cambiar los valores de la línea 31 y esperar los resultados
